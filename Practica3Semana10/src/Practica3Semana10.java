@@ -6,7 +6,7 @@ public class Practica3Semana10 {
     private int numFeligreses;
     private Feligres[] feligreses;
 
-    // Construcctor para inicializar los datos de la iglesia
+    // Construcctor para empezar con los datos de la iglesia
     public Practica3Semana10(String nombre, String pastor, int numFeligreses) {
         this.nombre = nombre;
         this.pastor = pastor;
@@ -14,12 +14,12 @@ public class Practica3Semana10 {
         this.feligreses = new Feligres[numFeligreses];
     }
 
-    // Metodo para agregar feligresess a la iglesia
+    // Metodo para agregar a los feligresess a la iglesia
     public void agregarFeligres(int i, String nombre, String cedula, double diezmo) {
         this.feligreses[i] = new Feligres(nombre, cedula, diezmo);
     }
 
-    // Metodos para calcular diferentes montos
+    // Metodo para calcular los montos
     public double calcularMontoTotal() {
         double montoTotal = 0;
         for (int i = 0; i < this.numFeligreses; i++) {
